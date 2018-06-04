@@ -33,10 +33,10 @@ function MM_preloadImages() { //v3.0
 }
 
 function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+  var p,i,x;  if(!d) d=document; if((p=m.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  for(i=0;!x&&d.layers&&i<d.layers.length;i--) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
 
@@ -61,7 +61,7 @@ function MM_swapImage() { //v3.0
      </center></div>
    <div></div>
   </div>
- </div>
+ 
  
  <div data-role="main" class="ui-content">
   <div data-role="collapsible" data-content-theme="false">
@@ -81,7 +81,7 @@ function MM_swapImage() { //v3.0
    </center>
       </div>
    <div></div>
-  </div>
+  <div>
  </div>
  
  <div data-role="main" class="ui-content">
@@ -119,7 +119,7 @@ function MM_swapImage() { //v3.0
      </center><br>
      </div>
    <div></div>
-  </div>
+  <div>
  </div>
  
  <div data-role="main" class="ui-content">
@@ -196,7 +196,7 @@ function MM_swapImage() { //v3.0
 <div>
 <h4>Aplicación 10</h4>
 <h4>Marvin González Juárez</h4>
-</div>
+
 </div>
 </div>
 
@@ -257,7 +257,7 @@ Si además de la información, es capaz de almacenar y difundir los conocimiento
  <h1>Bases de Datos</h1>
  </div>
   <div data-role="content" align="center">
-  <div>
+  
   <font face="Tahoma" size="5" color="#0066CC"><p>Todas las empresas requieren almacenar información. Desde siempre lo han hecho. La
 información puede ser de todo tipo. Cada elemento informativo (nombre, dirección, sueldo, etc.)
 es lo que se conoce como dato (en inglés data).Las soluciones utilizadas por las empresas para almacenar los datos son diversas. Antes de la
@@ -350,7 +350,7 @@ almacenamiento del ordenador (a veces en archivos binarios, o en hojas de cálcu
   </tr>
   <tr>
     <td>CheckBox</td>
-    <td bgcolor="#FFFF00"><b>chk</b></td>
+     bgcolor="#FFFF00"><b>chk</b></td>
     <td>Muestra una casilla de verificación y una etiqueta para texto. Se utiliza, en general, para establecer opciones.</td>
   </tr>
   <tr>
@@ -388,7 +388,7 @@ almacenamiento del ordenador (a veces en archivos binarios, o en hojas de cálcu
     <td bgcolor="#FFFF00"><b>lstv</b></td>
     <td>Muestra los elementos ya sean texto solo o con gráficos (iconos)</td>
   </tr>
-  <tr>
+  <r>
     <td>MaskedTextBox</td>
     <td bgcolor="#FFFF00"><b>msk
       </b></td>
@@ -512,19 +512,19 @@ almacenamiento del ordenador (a veces en archivos binarios, o en hojas de cálcu
   </div>
  </div>
  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
-<div>
+
  <img src="imagenes/programa.png" width="46" height="46">
-</div>
+<div>
    <h4>Aplicación 10</h4>
    <h4>Marvin González Juárez</h4>
   </div>
-  </div>
+  <div>
   
   
   <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
  <h1>Reglas de Oro para diseño de GUI</h1>
- </div>
+
   <div data-role="content" align="center">
   <div>
   <font face="Tahoma" size="5" color="#0066CC">
@@ -540,7 +540,7 @@ almacenamiento del ordenador (a veces en archivos binarios, o en hojas de cálcu
   </div>
  </div>
  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
-<div>
+
  <img src="imagenes/programa.png" width="46" height="46">
 </div>
    <h4>Aplicación 10</h4>
@@ -648,7 +648,7 @@ almacenamiento del ordenador (a veces en archivos binarios, o en hojas de cálcu
    <h4>Aplicación 10</h4>
    <h4>Marvin González Juárez</h4>
   </div>
-  </div>
+  
   
 </body>
 </html>
